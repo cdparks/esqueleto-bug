@@ -1,7 +1,8 @@
 # esqueleto-bug
 
-**tl;dr** PostgreSQL 10.14 rejects queries produced by
-`esqueleto-3.5.0.0` when `notIn` is passed an empty list
+**tl;dr** Fixed by [#273](https://github.com/bitemyapp/esqueleto/pull/273)
+
+~~PostgreSQL 10.14 rejects queries produced by `esqueleto-3.5.0.0` when `notIn` is passed an empty list~~
 
 Until recently, both `in_` and `notIn` used a helper function
 `ifNotEmptyList` to avoid generating expressions like `x in ()` and
